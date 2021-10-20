@@ -18,24 +18,24 @@ function ByState() {
         console.log(error);
       });
 
-    // let [lbls, dt] = StateWiseAnalysis(colleges);
+    let [lbls, dt] = StateWiseAnalysis(colleges);
 
-    setData({
-      labels: ["UP", "AP", "Tamilnadu", "Kerala", "J&K"],
-      datasets: [
-        {
-          label: "Colleges by state",
-          backgroundColor: [
-            "#B21F00",
-            "#C9DE00",
-            "#2FDE00",
-            "#00A6B4",
-            "#6800B4",
-          ],
-          data: [20, 25, 64, 94, 65],
-        },
-      ],
-    });
+  //   setData({
+  //     labels: ["UP", "AP", "Tamilnadu", "Kerala", "J&K"],
+  //     datasets: [
+  //       {
+  //         label: "Colleges by state",
+  //         backgroundColor: [
+  //           "#B21F00",
+  //           "#C9DE00",
+  //           "#2FDE00",
+  //           "#00A6B4",
+  //           "#6800B4",
+  //         ],
+  //         data: [20, 25, 64, 94, 65],
+  //       },
+  //     ],
+  //   });
   }, [colleges]);
 
   return (
