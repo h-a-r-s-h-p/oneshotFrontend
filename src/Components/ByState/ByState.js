@@ -10,7 +10,7 @@ function ByState() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8001/charts")
+      .get("https://oneshotfrontend.herokuapp.com/charts")
       .then((res) => {
         setColleges(res);
       })
